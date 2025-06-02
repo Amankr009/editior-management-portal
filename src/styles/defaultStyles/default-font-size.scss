@@ -1,0 +1,34 @@
+@mixin font-medium {
+  font-family: Merriweather Sans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+@mixin font-regular {
+  font-family: Merriweather Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin semi-medium-bold {
+  font-family: Merriweather Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin semi-medium {
+  font-family: Merriweather Sans;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin font-small {
+  font-family: Merriweather Sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}

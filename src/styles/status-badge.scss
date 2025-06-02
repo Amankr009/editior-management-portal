@@ -1,0 +1,19 @@
+@use "./defaultStyles/default-color" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+.status-badge {
+  @include font-small;
+  padding: 8px 16px;
+  border-radius: 16px;
+  width: fit-content;
+}
+
+.blue-theme {
+  color: $blueBadgeTextColor;
+  background-color: $blueBg;
+}
+
+.yellow-theme {
+  color: $yellowBadgeTextColor;
+  background-color: $yellowBg;
+}

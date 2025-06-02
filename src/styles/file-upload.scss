@@ -1,0 +1,57 @@
+@use "./defaultStyles/default-color.scss" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+.file-upload-wrapper {
+  @include font-regular;
+  width: 100%;
+
+  .drop-area {
+    border: 1px dashed $borderColor;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    color: $titleColor;
+    background-color: $white;
+    cursor: pointer;
+
+    .browse-link {
+      color: $blueBadgeTextColor;
+      text-decoration: underline;
+    }
+  }
+
+  .hint {
+    margin-top: 8px;
+    color: $fileUploadHint;
+    text-align: center;
+  }
+
+  .author-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    padding: 4px 10px;
+    cursor: default;
+  }
+
+  .file-value {
+    @include font-small;
+    color: $titleColor;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .pdf-icon,
+  .file-add {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .file-wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+  

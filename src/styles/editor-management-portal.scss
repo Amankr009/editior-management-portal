@@ -1,0 +1,52 @@
+@use "./defaultStyles/default-color" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+
+.container-wrap {
+  display: flex;
+}
+
+.left-section {
+  color: $titleColor;
+  background-color: $bgColor;
+  height: auto;
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  cursor: default;
+}
+
+.title {
+  @include font-medium;
+  padding: 16px 0 24px;
+}
+
+.sub-title {
+  @include font-regular;
+  padding: 16px 16px 16px 0;
+}
+
+.seperator {
+  border-bottom: 1px solid  $separatorColor;
+  margin: 24px 12px 24px 8px;
+}
+
+.body-wrap {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 48px 0 32px;
+}
+
+.user-name {
+  @include semi-medium-bold;
+  color: $black;
+  padding: 16px 0;
+}
+
+.chart-wrap {
+  display: flex;
+  gap: 32px;
+}

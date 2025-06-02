@@ -1,0 +1,35 @@
+@use "./defaultStyles/default-color.scss" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+.table-wrap {
+  font-family: Merriweather Sans;
+  border-collapse: collapse;
+  cursor: default;
+}
+
+.table-head {
+  background-color: $tableHeadBgColor;
+  height: 44px;
+}
+
+.table-body {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.table-header,
+.table-body-col {
+  @include font-regular;
+  height: 40px;
+  padding: 8px;
+}
+
+.table-body-status {
+  display: flex;
+  justify-content: center;
+}
+
+.table-body-edit {
+  text-align: right;
+  height: 40px;
+  padding: 8px;
+}

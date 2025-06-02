@@ -1,0 +1,19 @@
+@use "./defaultStyles/default-color" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+.option-wrap {
+  display: flex;
+  gap: 8px;
+  padding: 16px 16px 16px 0;
+  cursor: pointer;
+}
+
+.option-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.option-name {
+  @include font-regular;
+  color: $titleColor;
+}

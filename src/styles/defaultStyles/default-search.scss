@@ -1,0 +1,10 @@
+@use "./default-color" as *;
+
+@mixin seach-wrap {
+  height: 32px;
+  width: 286px;
+  display: flex;
+  border: 1px solid $borderColor;
+  border-radius: 16px;
+  align-items: center;
+}

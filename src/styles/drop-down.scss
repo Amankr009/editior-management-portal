@@ -1,0 +1,50 @@
+@use "./defaultStyles/default-color.scss" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+.dropdown-select {
+  @include font-small;
+  position: relative;
+  width: 100%;
+
+  .selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+
+  .down-arrow {
+    height: 16px;
+    width: 16px;
+  }
+
+  .options {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    overflow: hidden;
+
+    .option {
+      padding: 6px 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $blueBg;
+      }
+
+      &.active {
+        background-color: $blueBg;
+      }
+    }
+  }
+}
+  

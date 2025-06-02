@@ -1,0 +1,24 @@
+@use "./defaultStyles/default-color.scss" as *;
+@use "./defaultStyles/default-font-size.scss" as *;
+
+.date-input-wrapper {
+    @include font-small;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    padding: 3px 10px 6px 0;
+  
+    .date-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      color: #002d3e;
+  
+      &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      }
+    }
+  }
+  
